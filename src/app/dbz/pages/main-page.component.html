@@ -1,0 +1,18 @@
+<h2>DBZ Personajes</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <h4>Personajes Listado</h4>
+    <dbz-list
+      [characterList]="characters"
+      (onDelete)="deleteCharacter($event)"
+    ></dbz-list>
+  </div>
+
+  <div class="col">
+    <dbz-add-character
+      (onNewCharacter)="addCharacter($event)"
+    ></dbz-add-character>
+  </div>
+</div>
